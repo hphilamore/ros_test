@@ -1,0 +1,2 @@
+beginner_tutorials:edukit_bot:my_pkg:numpy_tutorial:robot_pkg
+-DCATKIN_DEVEL_PREFIX=/home/parallels/Documents/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/parallels/Documents/catkin_ws/install -G Unix Makefiles

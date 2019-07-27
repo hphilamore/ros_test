@@ -1,0 +1,10 @@
+#! /usr/bin/env python
+
+import tut_package.bye
+from tut_package.bye import PCA9685
+
+
+if __name__ == '__main__':
+    tut_package.bye.say('my friend!')
+    pwm = PCA9685(0x40, debug=False)
+	
