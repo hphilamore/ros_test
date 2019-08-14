@@ -9,7 +9,7 @@ import sys
 # Set the GPIO modes
 GPIO.setmode(GPIO.BCM)
 
-class DistanceSensor()
+class DistanceSensor():
     def __init__(self, pinTrigger, pinEcho):
         self.pinTrigger = pinTrigger
         self.pinEcho = pinEcho
