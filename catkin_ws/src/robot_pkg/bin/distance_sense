@@ -43,6 +43,7 @@ def measure():
         starttime = time.time() 
         if  starttime - inittime >= timeout:
             print("sensor timeout!")
+            stoptime = starttime 
             break
         #stoptime = starttime 
     
