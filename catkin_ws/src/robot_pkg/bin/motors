@@ -92,7 +92,7 @@ if __name__ == '__main__':
     rospy.init_node('motors', anonymous=True)
 
     rospy.Subscriber('command', String, Motor.CommandCallback)
-    rospy.Subscriber('distance_sense' , String, DistanceCallback)
+    rospy.Subscriber('distance_sense' , String, Motor.DistanceCallback)
 
     rospy.spin()
     print('Shutting down: stopping motors')
