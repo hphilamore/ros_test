@@ -20,8 +20,8 @@ class DistanceSensor():
     timeout = 1
 
     # Set the GPIO Pin modes 
-    GPIO.setup(self.pinTrigger, GPIO.OUT) # Trigger
-    GPIO.setup(self.pinEcho, GPIO.IN) # Echo
+    GPIO.setup(pinTrigger, GPIO.OUT) # Trigger
+    GPIO.setup(pinEcho, GPIO.IN) # Echo
      
 
     # Take a distance measurement 
