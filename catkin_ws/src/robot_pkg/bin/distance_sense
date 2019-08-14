@@ -2,13 +2,47 @@
 # license removed for brevity
 import rospy
 from std_msgs.msg import String
+import RPi.GPIO as GPIO
+import time
+
+# Ultrasonic sensor variables
+pinTrigger = 17 
+pinEcho = 18
+
+ 
+
+# Take a distance measurement 
+def measure(): 
+    GPIO.output(pinTrigger, True) 
+    time.sleep(0.00001) 
+    GPIO.output(pinTrigger, False) 
+    starttime = time.time() 
+    stoptime = starttime 
+    while GPIO.input(pinEcho) == 0: 
+        starttime = time.time() 
+        stoptime = starttime 
+    while GPIO.input(pinEcho) == 1: 
+        stoptime = time.time() 
+        # If the sensor is too close to an object, the Pi cannot 
+        # see the echo quickly enough, so we have to detect that 
+        # problem and say what has happened. 
+        if stoptime - starttime >= 0.04: 
+            print("Hold on there! You're too close for me to see.") 
+            stoptime = starttime 
+            break 
+    elapsedtime = stoptime - starttime 
+    distance = (elapsedtime * 34300) / 2 
+    print("Distance: %.1f cm" % distance) 
+    return distance 
+
 
 def talker():
     pub = rospy.Publisher('distance_sense', String, queue_size=10)
     rospy.init_node('distance_sense', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
-        hello_str = "hello world %s" % rospy.get_time()
+        # hello_str = "hello world %s" % rospy.get_time()
+        hello_str = "hello world %s" % string(measure())
         rospy.loginfo(hello_str)
         pub.publish(hello_str)
         rate.sleep()
