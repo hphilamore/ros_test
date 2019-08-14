@@ -80,8 +80,8 @@ if __name__ == '__main__':
 		        self.MotorStop(1)
 		        #StopMotors()
 
-		    def DistanceCallback(data):
-				rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+	    def DistanceCallback(self, data):
+			rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
 
     # create a motor object
     Motor = MotorDriver()
