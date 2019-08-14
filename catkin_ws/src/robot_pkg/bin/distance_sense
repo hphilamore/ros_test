@@ -41,6 +41,7 @@ def measure():
     while GPIO.input(pinEcho) == 0: 
         print("measuring...") 
         starttime = time.time() 
+        # If the echo is not returned, quit the measurement
         if  starttime - inittime >= timeout:
             print("sensor timeout!")
             stoptime = starttime 
