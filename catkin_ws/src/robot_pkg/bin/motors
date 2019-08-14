@@ -71,7 +71,9 @@ if __name__ == '__main__':
 		    #     Right()
 		    elif command == 'stop':
 		        print('Stopping')
-		        StopMotors()
+		        # StopMotors()
+                        self.MotorStop(0)
+                        self.MotorStop(1)
 		    else:
 		        print('Unknown command, stopping instead')
 		        self.MotorStop(0)
@@ -81,8 +83,8 @@ if __name__ == '__main__':
     # create a motor object
     Motor = MotorDriver()
 
-    Motor.MotorRun(0, 'forward', 100)
-    Motor.MotorRun(1, 'backward', 100)
+    #Motor.MotorRun(0, 'forward', 100)
+    #Motor.MotorRun(1, 'backward', 100)
 
     rospy.init_node('motors')
 
