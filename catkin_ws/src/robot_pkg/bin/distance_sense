@@ -12,6 +12,9 @@ GPIO.setmode(GPIO.BCM)
 pinTrigger = 17 
 pinEcho = 18
 
+# Set the GPIO Pin modes 
+GPIO.setup(pinTrigger, GPIO.OUT) # Trigger
+GPIO.setup(pinEcho, GPIO.IN) # Echo
  
 
 # Take a distance measurement 
