@@ -87,7 +87,7 @@ class DistanceSensor():
             rate.sleep()
 
 if __name__ == '__main__':
-    DistSense = DistanceSensor()
+    DistSense = DistanceSensor(17, 18)
     try:
         DistSense.talker()
     except rospy.ROSInterruptException:
