@@ -14,11 +14,7 @@ class DistanceSensor():
         self.pinTrigger = pinTrigger
         self.pinEcho = pinEcho
         self.GPIOsetup()
-
-    # # Ultrasonic sensor variables
-    # pinTrigger = 17 
-    # pinEcho = 18
-    timeout = 1
+        self.timeout = 1    
 
     # Set the GPIO Pin modes 
     def GPIOsetup(self):
@@ -49,7 +45,7 @@ class DistanceSensor():
             print("measuring...") 
             starttime = time.time() 
             # If the echo is not returned, quit the measurement
-            if  starttime - inittime >= timeout:
+            if  starttime - inittime >= self.timeout:
                 print("sensor timeout!")
                 stoptime = starttime 
                 break
