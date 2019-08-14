@@ -1,8 +1,8 @@
-prefix=/home/parallels/Documents/catkin_ws/install
+prefix=/home/hemma/Documents/ros_test/catkin_ws/install
 
 Name: numpy_tutorial
 Description: Description of numpy_tutorial
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/parallels/Documents/catkin_ws/install/lib 
+Libs: -L/home/hemma/Documents/ros_test/catkin_ws/install/lib 
 Requires: 

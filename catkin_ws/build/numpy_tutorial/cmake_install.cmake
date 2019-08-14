@@ -1,8 +1,8 @@
-# Install script for directory: /home/parallels/Documents/catkin_ws/src/numpy_tutorial
+# Install script for directory: /home/hemma/Documents/ros_test/catkin_ws/src/numpy_tutorial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/Documents/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hemma/Documents/ros_test/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/build/numpy_tutorial/catkin_generated/installspace/numpy_tutorial.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/build/numpy_tutorial/catkin_generated/installspace/numpy_tutorial.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/numpy_tutorial/cmake" TYPE FILE FILES
-    "/home/parallels/Documents/catkin_ws/build/numpy_tutorial/catkin_generated/installspace/numpy_tutorialConfig.cmake"
-    "/home/parallels/Documents/catkin_ws/build/numpy_tutorial/catkin_generated/installspace/numpy_tutorialConfig-version.cmake"
+    "/home/hemma/Documents/ros_test/catkin_ws/build/numpy_tutorial/catkin_generated/installspace/numpy_tutorialConfig.cmake"
+    "/home/hemma/Documents/ros_test/catkin_ws/build/numpy_tutorial/catkin_generated/installspace/numpy_tutorialConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/numpy_tutorial" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/src/numpy_tutorial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/numpy_tutorial" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/src/numpy_tutorial/package.xml")
 endif()
 

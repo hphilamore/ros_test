@@ -4,7 +4,7 @@ message(WARNING "Invoking generate_messages() without having added any message o
 You should either add add_message_files() and/or add_service_files() calls or remove the invocation of generate_messages().")
 message(STATUS "my_pkg: 0 messages, 0 services")
 
-set(MSG_I_FLAGS "-Imy_pkg:/home/parallels/Documents/catkin_ws/src/my_pkg/msg")
+set(MSG_I_FLAGS "-Imy_pkg:/home/hemma/Documents/ros_test/catkin_ws/src/my_pkg/msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)

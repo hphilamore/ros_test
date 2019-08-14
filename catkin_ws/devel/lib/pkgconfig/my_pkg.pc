@@ -1,8 +1,8 @@
-prefix=/home/parallels/Documents/catkin_ws/devel
+prefix=/home/hemma/Documents/ros_test/catkin_ws/devel
 
 Name: my_pkg
 Description: Description of my_pkg
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/parallels/Documents/catkin_ws/devel/lib 
+Libs: -L/home/hemma/Documents/ros_test/catkin_ws/devel/lib 
 Requires: message_generation rospy

@@ -1,8 +1,8 @@
-# Install script for directory: /home/parallels/Documents/catkin_ws/src/my_pkg
+# Install script for directory: /home/hemma/Documents/ros_test/catkin_ws/src/my_pkg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/Documents/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hemma/Documents/ros_test/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,45 +38,45 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/safe_execute_install.cmake")
+  include("/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg/cmake" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkg-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg/cmake" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkg-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/parallels/Documents/catkin_ws/devel/share/roseus/ros/my_pkg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hemma/Documents/ros_test/catkin_ws/devel/share/roseus/ros/my_pkg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/parallels/Documents/catkin_ws/devel/lib/python2.7/dist-packages/my_pkg")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/hemma/Documents/ros_test/catkin_ws/devel/lib/python2.7/dist-packages/my_pkg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/parallels/Documents/catkin_ws/devel/lib/python2.7/dist-packages/my_pkg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/hemma/Documents/ros_test/catkin_ws/devel/lib/python2.7/dist-packages/my_pkg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkg.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkg.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg/cmake" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkg-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg/cmake" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkg-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg/cmake" TYPE FILE FILES
-    "/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkgConfig.cmake"
-    "/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkgConfig-version.cmake"
+    "/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkgConfig.cmake"
+    "/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/installspace/my_pkgConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/src/my_pkg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_pkg" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/src/my_pkg/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_pkg" TYPE PROGRAM FILES "/home/parallels/Documents/catkin_ws/build/my_pkg/catkin_generated/installspace/hello")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/my_pkg" TYPE PROGRAM FILES "/home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/catkin_generated/installspace/hello")
 endif()
 

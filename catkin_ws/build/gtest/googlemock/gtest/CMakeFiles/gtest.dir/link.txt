@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/parallels/Documents/catkin_ws/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/parallels/Documents/catkin_ws/build/gtest/googlemock/gtest/src -lpthread 
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/hemma/Documents/ros_test/catkin_ws/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/hemma/Documents/ros_test/catkin_ws/build/gtest/googlemock/gtest/src -lpthread 

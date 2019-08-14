@@ -1,8 +1,8 @@
-# Install script for directory: /home/parallels/Documents/catkin_ws/src/edukit_bot
+# Install script for directory: /home/hemma/Documents/ros_test/catkin_ws/src/edukit_bot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/Documents/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hemma/Documents/ros_test/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/parallels/Documents/catkin_ws/build/edukit_bot/catkin_generated/safe_execute_install.cmake")
+  include("/home/hemma/Documents/ros_test/catkin_ws/build/edukit_bot/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/build/edukit_bot/catkin_generated/installspace/edukit_bot.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/build/edukit_bot/catkin_generated/installspace/edukit_bot.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edukit_bot/cmake" TYPE FILE FILES
-    "/home/parallels/Documents/catkin_ws/build/edukit_bot/catkin_generated/installspace/edukit_botConfig.cmake"
-    "/home/parallels/Documents/catkin_ws/build/edukit_bot/catkin_generated/installspace/edukit_botConfig-version.cmake"
+    "/home/hemma/Documents/ros_test/catkin_ws/build/edukit_bot/catkin_generated/installspace/edukit_botConfig.cmake"
+    "/home/hemma/Documents/ros_test/catkin_ws/build/edukit_bot/catkin_generated/installspace/edukit_botConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edukit_bot" TYPE FILE FILES "/home/parallels/Documents/catkin_ws/src/edukit_bot/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/edukit_bot" TYPE FILE FILES "/home/hemma/Documents/ros_test/catkin_ws/src/edukit_bot/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/edukit_bot" TYPE PROGRAM FILES "/home/parallels/Documents/catkin_ws/build/edukit_bot/catkin_generated/installspace/main")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/edukit_bot" TYPE PROGRAM FILES "/home/hemma/Documents/ros_test/catkin_ws/build/edukit_bot/catkin_generated/installspace/main")
 endif()
 

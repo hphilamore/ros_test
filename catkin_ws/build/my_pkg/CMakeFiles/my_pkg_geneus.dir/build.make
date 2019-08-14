@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/Documents/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/hemma/Documents/ros_test/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/Documents/catkin_ws/build
+CMAKE_BINARY_DIR = /home/hemma/Documents/ros_test/catkin_ws/build
 
 # Utility rule file for my_pkg_geneus.
 
@@ -63,10 +63,10 @@ my_pkg/CMakeFiles/my_pkg_geneus.dir/build: my_pkg_geneus
 .PHONY : my_pkg/CMakeFiles/my_pkg_geneus.dir/build
 
 my_pkg/CMakeFiles/my_pkg_geneus.dir/clean:
-	cd /home/parallels/Documents/catkin_ws/build/my_pkg && $(CMAKE_COMMAND) -P CMakeFiles/my_pkg_geneus.dir/cmake_clean.cmake
+	cd /home/hemma/Documents/ros_test/catkin_ws/build/my_pkg && $(CMAKE_COMMAND) -P CMakeFiles/my_pkg_geneus.dir/cmake_clean.cmake
 .PHONY : my_pkg/CMakeFiles/my_pkg_geneus.dir/clean
 
 my_pkg/CMakeFiles/my_pkg_geneus.dir/depend:
-	cd /home/parallels/Documents/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/Documents/catkin_ws/src /home/parallels/Documents/catkin_ws/src/my_pkg /home/parallels/Documents/catkin_ws/build /home/parallels/Documents/catkin_ws/build/my_pkg /home/parallels/Documents/catkin_ws/build/my_pkg/CMakeFiles/my_pkg_geneus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hemma/Documents/ros_test/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hemma/Documents/ros_test/catkin_ws/src /home/hemma/Documents/ros_test/catkin_ws/src/my_pkg /home/hemma/Documents/ros_test/catkin_ws/build /home/hemma/Documents/ros_test/catkin_ws/build/my_pkg /home/hemma/Documents/ros_test/catkin_ws/build/my_pkg/CMakeFiles/my_pkg_geneus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_pkg/CMakeFiles/my_pkg_geneus.dir/depend
 

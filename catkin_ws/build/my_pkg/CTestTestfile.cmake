@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/parallels/Documents/catkin_ws/src/my_pkg
-# Build directory: /home/parallels/Documents/catkin_ws/build/my_pkg
+# Source directory: /home/hemma/Documents/ros_test/catkin_ws/src/my_pkg
+# Build directory: /home/hemma/Documents/ros_test/catkin_ws/build/my_pkg
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
