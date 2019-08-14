@@ -80,15 +80,19 @@ if __name__ == '__main__':
 		        self.MotorStop(1)
 		        #StopMotors()
 
+		    def DistanceCallback(data):
+				rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+
     # create a motor object
     Motor = MotorDriver()
 
     #Motor.MotorRun(0, 'forward', 100)
     #Motor.MotorRun(1, 'backward', 100)
 
-    rospy.init_node('motors')
+    rospy.init_node('motors', anonymous=True)
 
     rospy.Subscriber('command', String, Motor.CommandCallback)
+    rospy.Subscriber('distance_sense' , String, DistanceCallback)
 
     rospy.spin()
     print('Shutting down: stopping motors')
