@@ -5,6 +5,9 @@ from std_msgs.msg import String
 import RPi.GPIO as GPIO
 import time
 
+# Set the GPIO modes
+GPIO.setmode(GPIO.BCM)
+
 # Ultrasonic sensor variables
 pinTrigger = 17 
 pinEcho = 18
