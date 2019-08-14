@@ -5,7 +5,7 @@ import math
 import smbus
 
 def say(name):
-    print('Bye ' + name)
+    print('Aloha ' + name)
 
 class PCA9685:
 

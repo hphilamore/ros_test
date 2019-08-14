@@ -11,11 +11,11 @@ if __name__ == '__main__':
     Dir = [
     'forward',
     'backward',
-	]
-	pwm = PCA9685(0x40, debug=False)
-	pwm.setPWMFreq(50)
+    ]
+    pwm = PCA9685(0x40, debug=False)
+    pwm.setPWMFreq(50)
 
-	class MotorDriver():
+    class MotorDriver():
 	    def __init__(self):
 	        self.PWMA = 0
 	        self.AIN1 = 1
@@ -50,8 +50,9 @@ if __name__ == '__main__':
 	        else:
 	            pwm.setDutycycle(self.PWMB, 0)
 
-	Motor = MotorDriver()
-	# control 2 motor
-	Motor.MotorRun(0, 'forward', 100)
-	Motor.MotorRun(1, 'backward', 100)
-
+    Motor = MotorDriver()
+    # control 2 motor
+    #Motor.MotorRun(0, 'forward', 100)
+    #Motor.MotorRun(1, 'backward', 100)
+    Motor.MotorStop(0)
+    Motor.MotorStop(1)
