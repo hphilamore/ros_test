@@ -1,5 +1,7 @@
 #! /usr/bin/env python
 import rospy
+from std_msgs.msg import String
+
 import motor_package.PCA9685
 #from tut_package.bye import PCA9685
 from motor_package.PCA9685 import PCA9685
@@ -50,9 +52,48 @@ if __name__ == '__main__':
 	        else:
 	            pwm.setDutycycle(self.PWMB, 0)
 
+
+	    def CommandCallback(commandMessage):
+		    command = commandMessage.data
+		    if command == 'forwards':
+		        print('Moving forwards')
+		        self.MotorRun(0, 'forward', 100)
+    			self.MotorRun(1, 'backward', 100)
+		        #Forwards()
+		    # elif command == 'backwards':
+		    #     print('Moving backwards')
+		    #     Backwards()
+		    # elif command == 'left':
+		    #     print('Turning left')
+		    #     Left()
+		    # elif command == 'right':
+		    #     print('Turning right')
+		    #     Right()
+		    # elif command == 'stop':
+		    #     print('Stopping')
+		    #     StopMotors()
+		    else:
+		        print('Unknown command, stopping instead')
+		        self.MotorStop(0)
+		        self.MotorStop(1)
+		        #StopMotors()
+
+    # create a motor object
     Motor = MotorDriver()
+
+    rospy.init_node('motors')
+
+    rospy.Subscriber('command', String, Motor.CommandCallback)
+
+    rospy.spin()
+	print('Shutting down: stopping motors')
+	Motor.MotorStop(0)
+	Motor.MotorStop(1)
+	GPIO.cleanup()
+
+
     # control 2 motor
     #Motor.MotorRun(0, 'forward', 100)
     #Motor.MotorRun(1, 'backward', 100)
-    Motor.MotorStop(0)
-    Motor.MotorStop(1)
+    #Motor.MotorStop(0)
+    #Motor.MotorStop(1)
