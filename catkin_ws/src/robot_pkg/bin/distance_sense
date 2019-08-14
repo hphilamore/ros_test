@@ -21,15 +21,27 @@ GPIO.setup(pinEcho, GPIO.IN) # Echo
 # Take a distance measurement 
 def measure(): 
     print("initialise distance sense") 
+    # Set trigger to False (Low) 
+    GPIO.output(pinTrigger, False) 
+    # Allow module to settle 
+    time.sleep(0.5)
+    
+    # Send 10us pulse to trigger
     GPIO.output(pinTrigger, True) 
     time.sleep(0.00001) 
     GPIO.output(pinTrigger, False) 
+
+    # Start the timer
     starttime = time.time() 
-    stoptime = starttime 
+    #stoptime = starttime 
+
+    # The start time is reset until the Echo pin is taken high (==1)
     while GPIO.input(pinEcho) == 0: 
         print("measuring...") 
         starttime = time.time() 
-        stoptime = starttime 
+        #stoptime = starttime 
+    
+    # Stop when the Echo pin is no longer high - the end time
     while GPIO.input(pinEcho) == 1: 
         stoptime = time.time() 
         # If the sensor is too close to an object, the Pi cannot 
@@ -39,7 +51,13 @@ def measure():
             print("Hold on there! You're too close for me to see.") 
             stoptime = starttime 
             break 
+    
+    # Calculate pulse length
     elapsedtime = stoptime - starttime 
+
+    # Distance pulse travelled in that time is 
+    # time multiplied by the speed of sound (cm/s)
+    # (there and back so halve the value)
     distance = (elapsedtime * 34300) / 2 
     print("Distance: %.1f cm" % distance) 
     return distance 
@@ -62,4 +80,6 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
     except KeyboardInterrupt:
+        # Reset GPIO settings 
+        GPIO.cleanup()
         sys.exit()
