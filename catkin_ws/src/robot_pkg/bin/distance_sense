@@ -53,10 +53,10 @@ def measure():
         # If the sensor is too close to an object, the Pi cannot 
         # see the echo quickly enough, so we have to detect that 
         # problem and say what has happened. 
-        if stoptime - starttime <= 0.04: 
-            print("Hold on there! You're too close for me to see.") 
-            stoptime = starttime 
-            break 
+        # if stoptime - starttime <= 0.04: 
+        #     print("Hold on there! You're too close for me to see.") 
+        #     stoptime = starttime 
+        #     break 
     
     # Calculate pulse length
     elapsedtime = stoptime - starttime 
