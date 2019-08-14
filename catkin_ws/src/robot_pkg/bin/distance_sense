@@ -19,12 +19,14 @@ GPIO.setup(pinEcho, GPIO.IN) # Echo
 
 # Take a distance measurement 
 def measure(): 
+    print("initialise distance sense") 
     GPIO.output(pinTrigger, True) 
     time.sleep(0.00001) 
     GPIO.output(pinTrigger, False) 
     starttime = time.time() 
     stoptime = starttime 
     while GPIO.input(pinEcho) == 0: 
+        print("measuring...") 
         starttime = time.time() 
         stoptime = starttime 
     while GPIO.input(pinEcho) == 1: 
