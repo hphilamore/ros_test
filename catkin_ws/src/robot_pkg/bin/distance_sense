@@ -12,6 +12,7 @@ GPIO.setmode(GPIO.BCM)
 # Ultrasonic sensor variables
 pinTrigger = 17 
 pinEcho = 18
+timeout = 1
 
 # Set the GPIO Pin modes 
 GPIO.setup(pinTrigger, GPIO.OUT) # Trigger
@@ -32,6 +33,7 @@ def measure():
     GPIO.output(pinTrigger, False) 
 
     # Start the timer
+    inittime = time.time() 
     starttime = time.time() 
     #stoptime = starttime 
 
@@ -39,6 +41,9 @@ def measure():
     while GPIO.input(pinEcho) == 0: 
         print("measuring...") 
         starttime = time.time() 
+        if  starttime - inittime >= timeout:
+            print("sensor timeout!")
+            break
         #stoptime = starttime 
     
     # Stop when the Echo pin is no longer high - the end time
@@ -47,7 +52,7 @@ def measure():
         # If the sensor is too close to an object, the Pi cannot 
         # see the echo quickly enough, so we have to detect that 
         # problem and say what has happened. 
-        if stoptime - starttime >= 0.04: 
+        if stoptime - starttime <= 0.04: 
             print("Hold on there! You're too close for me to see.") 
             stoptime = starttime 
             break 
